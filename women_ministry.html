@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Import Google Icon Font -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+  <!-- Import materialize.css -->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <link type="text/css" rel="stylesheet" href="css/main.css" />
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <!-- Let browser know website is optimized for mobile -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kenyan global church</title>
+</head>
+
+<body id="home" class="scrollspy">
+    <div class="navbar-fixed">
+        <nav class="navigation-menu main-green">
+            <div class="nav-wrapper">
+              <a href="/" class="brand-logo"><img src="img/logo2.png"/></a>
+              <a href="#" data-activates="mobile-nav" class="button-collapse">
+                <i class="material-icons">menu</i>
+              </a>
+              <ul class="right hide-on-med-and-down">
+                <li><a href="/">Home</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="ministries.html">Ministries</a></li>
+                <li><a href="programs.html">Our programs</a></li>
+                <li><a href="board.html">Our team</a></li>
+                <!-- <li><a href="#contact">Contact Us</a></li> -->
+              </ul>
+            </div>
+        </nav>
+      </div>
+      <ul class="side-nav" id="mobile-nav">
+          <li><a href="/">Home</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="ministries.html">Ministries</a></li>
+          <li><a href="programs.html">Our programs</a></li>
+          <li><a href="board.html">Our team</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+      </ul>
+  <!-- slider section -->
+  <section class="ministry connect-hero wide" id="profile-banner">
+      <div class="container">
+          <div class="row">
+              <div class="section-bg parallax" style="background-image: url(&quot;img/ch15.jpg&quot;); background-position: center -8px;"></div>
+              <div class="page-title">	        
+                     <h1 class="tp-blog-title">KGC Women Ministry</h1>     
+                </div>
+          </div>
+      </div>
+  </section>
+  <!-- about us section -->
+  <section class="section white-text scrollspy" id="search" >
+      <div class="container">
+        <div class="row">
+            <div class="col s12 m12">
+              <p class="this-text">Presided by: Ms. Veronicah Karuru</p>
+              <p class="this-text">Email: info@globalchurch.org</p>
+                <h4 class="element-header"><span class="underline this-text">Youth ministry</span></h4>
+                <img src="img/ch1.jpg"  height="40%"/>
+            </div>
+          <div class="col s12 m12">
+              <h4><span class="underline this-text">What We Offer Through Intercessory Ministry</span></h4>
+            <p class="content-body black-text">
+                This group supports the church through prayer ministry. The mission of this ministry is to pray for the lost souls, the needy and the work of Christ.
+                For more information contact Ms. Veronicah Karuru. You email  atten; Veronicah info@globalchurch.org
+                                
+            </p>  
+          </div>
+         
+        </div>
+      </div>
+    </section>
+  
+
+  
+      
+
+    
+ <!-- footer -->
+ <section class="section social-section white-text center main-black">
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <h4>Reach us on social media</h4>
+          <a href="https://facebook.com" target="_blank" class="white-text">
+            <i class="fab fa-facebook fa-4x"></i>
+          </a>
+          <a href="https://twitter.com" target="_blank" class="white-text">
+            <i class="fab fa-twitter fa-4x"></i>
+          </a>
+          <a href="https://linked.com" target="_blank" class="white-text">
+            <i class="fab fa-linkedin fa-4x"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <p class="flow-text small mini-footer" style="font-size:1rem; background-color: black;">
+      <h5>kenyan global church &copy; 2019. All right reserved.</h5>
+    </p>
+  </section>
+  <!-- Import jQuery before materialize.js -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.button-collapse').sideNav();
+
+      //init slider
+      $('.slider').slider({
+        indicators: false,
+        height: 500,
+        transition: 500,
+        interval: 6000
+      });
+      //init autocomplete
+      $('.autocomplete').autocomplete({
+        data: {
+          Arub: null,
+          'Cancun Mexico': null,
+          Hawaii: null,
+          Nairobi: null,
+          Florida: null,
+          Jamaic: null,
+          Europe: null,
+          California: null
+        }
+      });
+      //init scrollspy
+      $('.scrollspy').scrollSpy();
+    });
+  </script>
+</body>
+
+</html>

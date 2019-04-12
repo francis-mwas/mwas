@@ -1,0 +1,22 @@
+{
+  "name": "auchi",
+  "version": "1.0.0",
+  "description": "auchi consultants app",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/francis-mwas/auchi.git"
+  },
+  "keywords": [
+    "auchi"
+  ],
+  "author": "francis mwangi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/francis-mwas/auchi/issues"
+  },
+  "homepage": "https://github.com/francis-mwas/auchi#readme"
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Import Google Icon Font -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cormorant|Lato" rel="stylesheet">
+  <!-- Import materialize.css -->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <link type="text/css" rel="stylesheet" href="css/main.css" />
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <!-- Let browser know website is optimized for mobile -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kenyan global church</title>
+</head>
+
+<body id="home" class="scrollspy">
+    <div class="navbar-fixed">
+        <nav class="navigation-menu main-green">
+            <div class="nav-wrapper">
+              <a href="/" class="brand-logo"><img src="img/logo2.png"/></a>
+              <a href="#" data-activates="mobile-nav" class="button-collapse">
+                <i class="material-icons">menu</i>
+              </a>
+              <ul class="right hide-on-med-and-down">
+                <li><a href="/">Home</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="ministries.html">Ministries</a></li>
+                <li><a href="programs.html">Our programs</a></li>
+                <li><a href="board.html">Our team</a></li>
+                <!-- <li><a href="#contact">Contact Us</a></li> -->
+              </ul>
+            </div>
+        </nav>
+      </div>
+      <ul class="side-nav" id="mobile-nav">
+          <li><a href="/">Home</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="ministries.html">Ministries</a></li>
+          <li><a href="programs.html">Our programs</a></li>
+          <li><a href="board.html">Our team</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+      </ul>
+  <!-- slider section -->
+  <section class="ministry connect-hero wide" id="profile-banner">
+      <div class="container">
+          <div class="row">
+              <div class="section-bg parallax" style="background-image: url(&quot;img/b1.jpg&quot;); background-position: center -8px;"></div>
+              <div class="page-title">	        
+                     <h1 class="tp-blog-title">About us</h1>          
+                </div>
+          </div>
+      </div>
+  </section>
+  
+   <!-- connect section -->
+   <section class="section section-search connect-hero wide about-c" id="connect-hero"> 
+    <div class="container">
+        <div class="row">
+        
+         <div class="col s12 m9 this-image img-containers">
+              
+            <h4 class="four-pastor">Rev. Eunice Ndirangu</h4>
+            <p class="pastor-img"><img class="responsive-img" src="img/pastor.jpg" alt="" ></p>
+            
+            <p class="about-paragraphs">The KGC is a diverse community church with over 150 members who originated from different denominations but found harmony and unity in our relationship with God and coming together as members of one community. Our vision is to provide an environment that enhances spiritual growth and maturity to all our members.
+                The church was established in 2009 by members of Kenyan community with a Mission of building up and strengthening individual members, families and communities through preaching, teaching and practical application and sharing of the word of God. The current Pastor is Rev. Eunice Ndirangu who has been a member of the church for the last eight years and two years as a presiding minister.</p> 
+                
+                <p class="about-paragraphs">The church is run by Board of Governance and the current Chair of the Board  is Ms. Jane Njambi Mucheru.</p>
+                
+
+               
+          </div>
+          <div class="col s12 m3">
+              <div class="about-side">
+                <ul>
+                    <li class="active"><a href="about.html"><i class="fas fa-long-arrow-alt-right"></i> About us</a></li>
+                    <li><a href="board.html"><i class="fas fa-long-arrow-alt-right"></i> Our team</a></li>
+                    <li><a href="#pastor"><i class="fas fa-long-arrow-alt-right"></i> Pastor</a></li>
+                </ul>
+                </div>
+              </div>
+        </div>
+      </div>
+     </section>
+
+  
+ <!-- footer -->
+ <section class="section social-section white-text center main-black">
+  <div class="container">
+    <div class="row">
+      <div class="col s12">
+        <h4>Reach us on social media</h4>
+        <a href="https://web.facebook.com/kenyanglobalchurch" target="_blank" class="white-text">
+          <i class="fab fa-facebook fa-4x"></i>
+        </a>
+        <a href="https://web.facebook.com/kenyanglobalchurch" target="_blank" class="white-text">
+          <i class="fab fa-twitter fa-4x"></i>
+        </a>
+        <a href="https://web.facebook.com/kenyanglobalchurch" target="_blank" class="white-text">
+          <i class="fab fa-linkedin fa-4x"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  <p class="flow-text small mini-footer" style="font-size:1rem; background-color: black;">
+    <h5>kenyan global church &copy; 2019. All right reserved.</h5>
+  </p>
+</section>
+  <!-- Import jQuery before materialize.js -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.button-collapse').sideNav();
+
+      //init slider
+      $('.slider').slider({
+        indicators: false,
+        height: 500,
+        transition: 500,
+        interval: 6000
+      });
+      //init autocomplete
+      $('.autocomplete').autocomplete({
+        data: {
+          Arub: null,
+          'Cancun Mexico': null,
+          Hawaii: null,
+          Nairobi: null,
+          Florida: null,
+          Jamaic: null,
+          Europe: null,
+          California: null
+        }
+      });
+      //init scrollspy
+      $('.scrollspy').scrollSpy();
+    });
+  </script>
+</body>
+
+</html>
